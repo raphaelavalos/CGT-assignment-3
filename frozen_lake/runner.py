@@ -63,7 +63,7 @@ def train(env: Env, gamma: float, num_episodes: int, evaluate_every: int, num_ev
             evaluation_step = episode // evaluate_every
             cum_rewards_eval = np.zeros(num_evaluation_episodes)
             for eval_episode in range(num_evaluation_episodes):
-                cum_rewards_eval[eval_episode] = run_episode(env, agent, True, gamma)
+                cum_rewards_eval[eval_episode] = run_episode(env, agent, False, gamma)
             evaluation_returns[evaluation_step] = np.mean(cum_rewards_eval)
             print(f"Episode {(episode + 1): >{digits}}/{num_episodes:0{digits}}:\t"
                   f"Averaged evaluation return {evaluation_returns[evaluation_step]:0.3}")
@@ -71,5 +71,8 @@ def train(env: Env, gamma: float, num_episodes: int, evaluate_every: int, num_ev
 
 
 if __name__ == '__main__':
-    env = gym.make('FrozenLake-v0')
+    try:
+        env = gym.make('FrozenLake-v0')
+    except gym.error.Error:
+        env = gym.make('FrozenLake-v1')
     # TODO: complete.

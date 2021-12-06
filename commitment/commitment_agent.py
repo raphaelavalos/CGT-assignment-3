@@ -10,9 +10,9 @@ def generate_t_to_seq(t_max: int) -> Tuple[dict, ndarray]:
     --------------------------
     >>> (id_to_seq, t_to_seq) = generate_t_to_seq(10)
     >>> id_to_seq
-    {0: array([0, 2, 5]), 1: array([1, 4, 8]), 2: array([3, 7]), 3: array([6]), 4: array([9])}
+    {0: array([0, 2, 5, 9]), 1: array([1, 4, 8]), 2: array([3, 7]), 3: array([6])}
     >>> t_to_seq
-    array([0, 1, 0, 2, 1, 0, 3, 2, 1, 4])
+    array([0, 1, 0, 2, 1, 0, 3, 2, 1, 0])
 
     :param t_max: The number of timesteps.
     :return: (id_to_seq, t_to_seq) with id_to_seq a dictionary mapping
