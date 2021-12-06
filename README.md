@@ -50,6 +50,7 @@ def generate_t_to_seq(t_max: int) -> Tuple[dict, ndarray]:
     # TODO: complete.
     raise NotImplementedError
 ```
+- `frozen_lake/matrix_games.py`: Removed the docstring of the MatrixGame constructor.
 
 # Additional information:
 
