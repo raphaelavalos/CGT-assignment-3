@@ -54,10 +54,10 @@ def generate_t_to_seq(t_max: int) -> Tuple[dict, ndarray]:
 
 # Additional information:
 
-With regards to the following part in the assignment:
+- With regards to the following part in the assignment:
 "A plot containing the return of the agent during training and the return at all evaluation times should be included in the report. This plot should be averaged over 20 full training runs with standard deviations as error bars."
 
-You can plot the two plots in one figure. So I would advise you to plot first the training returns (the mean over 20 runs), with x-values being something like 100, 200, 300, ... and y-values then being the average of the last 100 returns. Using 100 (or 200 or whatever) episodes is to make the plot a bit more readable compared to just plotting at every episode. Then again plt.plot(x, y, ...), but now for the evaluation returns, where the x-values are 1000, 2000, 3000, etc., and the y-values are the average returns of the 32 evaluation episodes (and then take the mean of these averages again over the 20 runs and calculate the stdevs). Make sure that all the means of your runs (training and evaluation) are visible within your stdevs. The easiest way to do this is to make your stdevs more transparent in the settings of your plot.
+- You can plot the two plots in one figure. So I would advise you to plot first the training returns (the mean over 20 runs), with x-values being something like 100, 200, 300, ... and y-values then being the average of the last 100 returns. Using 100 (or 200 or whatever) episodes is to make the plot a bit more readable compared to just plotting at every episode. Then again plt.plot(x, y, ...), but now for the evaluation returns, where the x-values are 1000, 2000, 3000, etc., and the y-values are the average returns of the 32 evaluation episodes (and then take the mean of these averages again over the 20 runs and calculate the stdevs). Make sure that all the means of your runs (training and evaluation) are visible within your stdevs. The easiest way to do this is to make your stdevs more transparent in the settings of your plot.
 
- 
+- Regarding the deltas in exercise 2, the previous communication was not clear and contained an error in the indexing. delta_{-1} is equal to 1 so that t_1 is equal to 2 for the first sequence. 
 
