@@ -8,7 +8,7 @@ You are free to add functions and methods, however you should properly comment t
 
 ## First task
 
-Complete the `student.py` file with you first and last names and your student number.
+Complete the `student.py` file with your first and last names and your student number.
 
 ## Exercise 1: Frozen Lake
 
