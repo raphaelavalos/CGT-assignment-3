@@ -59,3 +59,9 @@ def generate_t_to_seq(t_max: int) -> Tuple[dict, ndarray]:
 
 - Regarding the deltas in exercise 2, the previous communication was not clear and contained an error in the indexing. delta_{-1} is equal to 1 so that t_1 is equal to 2 for the first sequence. 
 
+As it appears that it was not clear for some students: 
+- delta_{-1} = 1
+- The first sequence begins at timestep 0 and therefore t_0 = 0.
+- With the formula in the assignment delta_0 = 2
+- This leads to t_1 = 2 for the sefirst sequence.
+
