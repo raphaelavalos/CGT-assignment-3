@@ -28,7 +28,6 @@ class IQLAgent:
         """
         Return the greedy action.
 
-        :param observation: The observation.
         :return: The action.
         """
         # TODO: complete.
