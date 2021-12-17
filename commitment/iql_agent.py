@@ -47,7 +47,6 @@ class IQLAgent:
         """
         Update the Q-Value.
 
-        :param obs: The observation.
         :param act: The action.
         :param rew: The reward.
         """
