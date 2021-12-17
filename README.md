@@ -51,6 +51,7 @@ def generate_t_to_seq(t_max: int) -> Tuple[dict, ndarray]:
     raise NotImplementedError
 ```
 - `frozen_lake/matrix_games.py`: Removed the docstring of the MatrixGame constructor.
+- `commitment/iql_agent.py`: Typo in docstring of IQLAgent.greedy_action as it does not take any parameter. 
 
 # Additional information:
 
